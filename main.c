@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "advMath.h"
 int main(){
-    //write your code here
+    //Your code here
     return 0;  
 }
