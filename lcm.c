@@ -25,7 +25,7 @@ void print_LCM(int a,int b){
     printf("%d",t);    
 }
 
-void LCM(int a,int b){
+int LCM(int a,int b){
     int t=a;
     if(a>b)
         for(int i=1;((t=(a*i))%b)!=0;i++);

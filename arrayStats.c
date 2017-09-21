@@ -85,3 +85,27 @@ float mode(float a[],int n){
 void showArray(float a[],int n){
     for(int i=0;i<n;i++) printf("%0.2f ",a[i]);
 }
+
+float lowerQuartile(float a[],int n){
+    sort(a,n);   
+    int m;
+    if(n%2==0) m=(n/2);
+    else m=(n/2)+1;
+    int mid1=m/2,mid2=mid1-1;
+    if(m%2==0) return (a[mid1]+a[mid2])/2.0;
+    else return (a[mid1]);
+}
+
+float upperQuartile(float a[],int n){
+    sort(a,n);
+    int m;
+    if(n%2==0) m=(n/2);
+    else m=(n/2)+1;
+    int mid1=(m+n)/2,mid2=mid1-1;
+    if(((m+n)/2)%2==0) return (a[mid1]);
+    else return (a[mid1]+a[mid2])/2.0;
+}
+
+float interQuartileRange(float a[],int n){
+    return upperQuartile(a,n)-lowerQuartile(a,n);
+}

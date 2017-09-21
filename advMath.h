@@ -53,7 +53,11 @@ float mode(float a[],int n);//returns the mode of the given array
 
 void showArray(float a[],int n);//displays the elements of the array
 
+float lowerQuartile(float a[],int n);//returns the lower quartile of an array
 
+float upperQuartile(float a[],int n);//returns the upper quartile of an array
+
+float interQuartileRange(float a[],int n);//returns the inter quartile range of an array
 
 
 
