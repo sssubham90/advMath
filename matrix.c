@@ -134,9 +134,9 @@ struct Matrix inverseMatrix(struct Matrix a){
         return createMatrix(1,1,e);
     }
     int i,j;
-    for(i=0;i<a.nr;i++)
-        for(j=0;i<a.nc;j++)
-            t.m[i][j]/=d;
+    for(i=0;i<t.nr;i++)
+        for(j=0;j<t.nc;j++)
+            t.m[i][j]=t.m[i][j]/d;
     return t;
 }
 
